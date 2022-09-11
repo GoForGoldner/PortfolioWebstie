@@ -1,0 +1,225 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+
+}
+
+
+
+body{
+  position: relative;
+  background-color: black;
+  
+
+}
+
+
+header{
+  background-color: #262626;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.heading{
+  padding-top: 200px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+  display: block;
+}
+
+
+
+
+.menu{
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  
+}
+
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+
+}
+
+.nav-branding{
+  font-size: 2.5rem;
+}
+
+.nav-link{
+  transition: 0.7s ease;
+  font-size: 1.5rem;
+}
+
+.nav-link:hover{
+  color: #329429;
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+
+}
+
+@media(max-width:768px) {
+    .hamburger{
+      display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+      position: fixed;
+      left: -100%;
+      top: 70px;
+      gap: 0;
+      flex-direction: column;
+      background-color: #262626;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .nav-item{
+      margin: 16px 0;
+    }
+    .nav-menu.active{
+      left: 0;
+    }
+}
+
+.intro {
+  background-image: url("treeBackround.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding-top: 65%;
+  padding-left: 8%;
+  padding-right: 5%;
+  width: inherit;
+  font-size: 7vw;
+  color: white;
+  padding-bottom: 10%;
+}
+
+
+.aboutMe{
+  background-image: url("boatBackround.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-left: 3%;
+  padding-right: 7%;
+  padding-bottom: 5%;;
+
+}
+.aboutMe-text{
+  font-size: 2vw;
+  color: white;
+}
+
+.aboutMe img{
+  width: 50%;
+  height: 50%;
+  padding: 7% 10% 7% 3%;
+}
+
+h4{
+  font-size: 8vw;
+  color: white;
+  margin-bottom: 100px;
+}
+
+.soccer img{
+  width: 50%;
+  height: 50%;
+  padding-left: 100px;
+  
+}
+.soccer{
+  
+  background-image: url("soccerBackround.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10% 7% 10% 6%;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  opacity: 1;
+
+}
+h2{
+  font-size: 8vw;
+  color: black;
+  margin-bottom: 100px;
+}
+
+.soccer-text{
+
+  font-size: 2.5vw;
+  color: black;
+  background-color: #C1E1C1;
+  opacity: 0.9;
+  padding: 3% 3% 5% 5%;
+
+}
+.compSci{
+  background-image: url("cityBackround.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10% 7% 10% 3%;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.compSci-text{
+  color: black;
+  font-size: 3vw;
+  background-color: antiquewhite;
+  opacity: 0.75;
+}
+
+h6{
+  font-size: 8vw;
+  color: black;
+  margin-bottom: 100px;
+}
+
+
