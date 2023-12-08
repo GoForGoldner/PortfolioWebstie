@@ -17,17 +17,10 @@ document.querySelectorAll('.nav-link').forEach(n => n.addEventListener("click", 
   navMenu.classList.remove('active');
 }))
 
+function readHere(pdfPath) {
+    // Construct the path to the PDF file
+    var pdfFilePath = pdfPath + ".pdf"; // Replace with your actual path
 
-
-function changeColor(){
-  document.querySelector('.text1').style.color = 'blue';
+    // Open the PDF file in a new tab or window
+    window.open(pdfFilePath, '_blank');
 }
-
-function disableScroll() {
-
-}
-
-function enableScroll() {
-    window.onscroll = function() {};
-}
-

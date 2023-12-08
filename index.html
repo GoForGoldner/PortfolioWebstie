@@ -1,81 +1,113 @@
 <!DOCTYPE html>
 <html>
 <body>
-<link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
 
-<header>
+    <header>
 
-<nav class = 'menu'>
-  <a href='#' class = 'nav-branding'>  Tyler Goldner's Portfolio </a>
-    <ul class = 'nav-menu'>
-      <li class = 'nav-item'>
-        <a href='#intro' class='nav-link'>Home</a>
-      </li>
+        <nav class='menu'>
+            <a href='#' class='nav-branding'>  Tyler Goldner's Portfolio </a>
+            <ul class='nav-menu'>
+                <li class='nav-item'>
+                    <a href='#intro' class='nav-link'>Home</a>
+                </li>
 
-      <li class = 'nav-item'>
-        <a href='#about' class='nav-link'>About</a>
-      </li>
+                <li class='nav-item'>
+                    <a href='#about' class='nav-link'>About</a>
+                </li>
 
-      <li class = 'nav-item'>
-        <a href='#soccer' class='nav-link'>Soccer</a>
-      </li>
+                <li class='nav-item'>
+                    <a href='#soccer' class='nav-link'>Soccer</a>
+                </li>
 
-      <li class = 'nav-item'>
-        <a href='#computerscience' class='nav-link'>Computer Science</a>
-      </li>
-  </ul>
-<div class="hamburger">
-  <span class='bar'></span>
-  <span class='bar'></span>
-  <span class='bar'></span>
-</div>
+                <li class='nav-item'>
+                    <a href='#computerscience' class='nav-link'>Projects</a>
+                </li>
 
-</nav>
-</header>
+                <li class='nav-item'>
+                    <a href='#academicwriting' class='nav-link'>Academic Writing</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class='bar'></span>
+                <span class='bar'></span>
+                <span class='bar'></span>
+            </div>
 
+        </nav>
+    </header>
 
+    <div class='intro' id='intro'>
+        Tyler Goldner's Portfolio
+    </div>
 
+    <div class='aboutMe' id='about'>
+        <div class='aboutMe-content'>
+            <h4> About Me, </h4>
+            <img src="PromAboutMePhoto.jpeg" alt='promPhoto'>
+        </div>
+            <div class='aboutMe-text'>
+                <h3>I was born in Milford, Massachusetts but moved to Hopkinton by the age of 3. I grew up with a loving family who cared for me and wanted me to take pride in my education. When I was very young I became interested in Computer Science at a summer camp I attended. This passion eventually led me to take multiple AP computer science courses in High School and a desire to take it even further in college. Some of my other hobbies and interests include Soccer and 3d printing.</h3>
+            </div>
+    </div>
 
+    <div class='extracurricular' id='extracurricular'>
+        <div class="soccer" id="soccer">
+            <div class="soccer-text">
+                <h2> Soccer </h2>
+                I started playing soccer when I was very young. I mainly play soccer for fun and as a chance to hang out with my friends. I have played for a club team for 3 years and played for my Highschool soccer team for all 4 years.
+            </div>
+            <img src="SoccerPhotoMe.jpeg" alt='soccerIndividualPhoto'>
+        </div>
+        <div class="ultimate-frisbee">
+            <img src="tempUltimateImage.jpg" alt='ultimateImage' >
+            <h2>Ultimate Frisbee</h2>
+            I recently found a passion for playing ultimate frisbee and have been playing with the Northeastern Ultimate Frisbee Team!
+        </div>
+    </div>
 
+    <div class='compSci' id='computerscience'>
+        <div class='compSci-text'>
+            <h6>Computer Science!</h6>
+            My love of Computer Science started when I took a Python course in 7th grade. I instantly fell in love with the idea of making whatever I wanted to. Most of my knowledge of the field came from the two AP Computer science courses I took in highschool (Computer Science Principles, Computer Science A). These courses made me find a love for solving problems while having fun in the process (especially Java in Computer Science A). At this point in my life I currently know 4 languages, Python, C, Java, Html/Css/Javascript.
+        </div>
+    </div>
 
-<div class = 'intro' id ='intro'>
-Tyler Goldner's Portfolio
-</div>
+    <div class='academicWriting' id='academicwriting'>
+        <h4>Academic Writing</h4>
 
+        <div class='box' id="biasmedia">
+            <h3>Bias In the Media</h3>
+            <div class="text-content">
+                This paper discusses the different methods of persuasion and tactics various news outlets use in order to sway the reader.
+            </div>
+            <button class="read-button" onclick="readHere('NEUNewsSwayingReadersArticleV2')">Read Here</button>
+        </div>
 
+        <div class="box" id="argumentitve">
+            <h3>Argumentative Essay</h3>
+            <div class="text-content">
+                This paper debates whether live streaming had a greater positive or negative impact on game development as a whole.
+            </div>
+            <button class="read-button" onclick="readHere('YoutubeGameDevelopmentEssay')">Read Here</button>
+        </div>
 
-<div class= 'aboutMe' id = 'about'>
-  <img src="PromAboutMePhoto.jpeg" alt = 'promPhoto'>
-  <div class='aboutMe-text'>
+        <div class="box" id="memoir">
+            <h3>Personal Memoir</h3>
+            <div class="text-content">
+                This paper reflects on a memory from my childhood and the implications that it had for my family
+            </div>
+            <button class="read-button" onclick="readHere('Personal Essay For ENGW')">Read Here</button>
+        </div>
 
+        <div class="box" id="reflection">
+            <h3>Reflection Assignment</h3>
+            <div class="text-content">
+                This paper discusses how my introductory english class changed my confidence and fluency in writing
+            </div>
+            <button class="read-button" onclick="readHere('ENGW Reflection')">Read Here</button>
+        </div>
+    </div>
 
-  <h4> About Me </h4>
-<h3>I was born in Milford, Massachusetts but moved to Hopkinton by the age of 3. I grew up with a loving family who cared for me and wanted me to take pride in my education. When I was very young I became interested in Computer Science at a summer camp I attended. This passion eventually led me to take multiple AP computer science courses in High School and a desire to take it even further in college. Some of my other hobbies and interests include Soccer and 3d printing.</h3>
-</div>
-</div>
-
-
-
-<div class='soccer' id = 'soccer'>
-
-  <div class="soccer-text">
-  <h2> Soccer in my life </h2>
-I started playing soccer when I was very young. I mainly play soccer for fun and as a chance to hang out with my friends. I have played for a club team for 3 years and played for my Highschool soccer team for all 4 years.
-</div>
-
-<img src="SoccerPhotoMe.jpeg" alt = 'soccerIndividualPhoto'>
-</div>
-
-
-
-<div class='compSci' id = 'computerscience'>
-  <div class='compSci-text'>
-    <h6>Computer Science!</h6>
-My love of Computer Science started when I took a Python course in 7th grade. I instantly fell in love with the idea of making whatever I wanted to. Most of my knowledge of the field came from the two AP Computer science courses I took in highschool (Computer Science Principles, Computer Science A). These courses made me find a love for solving problems while having fun in the process (especially Java in Computer Science A). At this point in my life I currently know 4 languages, Python, C, Java, Html/Css/Javascript.
-</div>
-</div>
-
-
-<script type="text/javascript" src = "index.js"> </script>
-
+    <script type="text/javascript" src="index.js"></script>
 </html>
